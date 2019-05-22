@@ -1,0 +1,82 @@
+body{
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+/* dot applied on class square*/
+.square{
+	width: 30%;
+	background: purple;
+	/*to show the squares*/
+	padding-bottom: 30%;
+	/*to make the squares in the same line*/
+	float: left;
+	/*to make a grid system of 6 squares*/
+	margin: 1.66%;
+	/* it change the corners of the square to curves*/
+	border-radius: 15%;
+	transition: background 1.0s;
+	/*for browser support bec transition only doesn't work on some browsers and the same for button or any animated property*/
+	-webkit-transition: background 1.0s;
+	-moz-transition: background 1.0s;
+}
+
+/* hash applied on id container*/
+#container{
+	/*to reallocate the whole div container*/
+	margin: 20px auto;
+	/*to resize all the squares because they take the entire screen*/
+	max-width: 600px;
+}
+
+h1{
+	font-weight: normal;
+	background: steelblue;
+	text-align: center;
+	color: white;
+	margin: 0;
+	text-transform: uppercase;
+	line-height: 1.1;
+	padding: 20px 0;
+}
+
+#colordisplay{
+	font-size: 200%;
+}
+
+#message{
+	display: inline-block;
+	width: 20%;
+}
+#stripe{
+	background: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+.selected{
+	color: white;
+	background-color: steelblue;
+}
+
+button{
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	/* control when i hover over the button it animated the transition between colors*/
+	transition: all 1.0s;
+	/*it removes the outline around the button*/
+	outline: none;
+}
+
+button:hover{
+color: white;
+background-color: steelblue;
+}
